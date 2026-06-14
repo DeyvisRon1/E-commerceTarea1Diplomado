@@ -23,8 +23,8 @@ function App() {
           </p>
         </div>
 
-        <Button titulo={"La cuenta " + count}
-        onClick ={() => setCount((count) => count + 1)}></Button>
+        <Button titulo={"la cuenta " + count}
+        onClick={() => setCount((count) => count + 1)}></Button>
       </section>
 
       <div className="ticks"></div>
