@@ -1,9 +1,15 @@
 import "./Image.css";
 
-function Image(props) { 
+function Image (props) {
     return (
         <div>
-           <img id="image" src={props.imageURL}></img>
+            {props.isSuperHost === true && 
+                (<div className="tip">
+                    <p>Hit para 2 Premium</p>
+                </div>)
+            }
+
+            <img id="image" src={props.imageURL}></img>
         </div>
     )
 }
