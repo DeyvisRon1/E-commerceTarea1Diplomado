@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
-import {Button} from './components'
+import {Button, Card} from './components'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -25,6 +25,8 @@ function App() {
 
         <Button titulo={"la cuenta " + count}
         onClick={() => setCount((count) => count + 1)}></Button>
+
+        <Card></Card>
       </section>
 
       <div className="ticks"></div>
